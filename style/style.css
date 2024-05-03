@@ -59,7 +59,7 @@ body {
     background-position: left center;
     color: var(--text-color-white);
     justify-content: space-between;
-    transition: all 1.3s ease;
+    /* transition: all 1.3s ease; */
 }
 
 .header:hover {
