@@ -1,0 +1,18 @@
+.why-us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    /* height: 940px; */
+
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 110px;
+    padding-bottom: 395px;
+    background-color: #F5F6F7;
+}
+
+.why-us iframe {
+    pointer-events: none;
+}
