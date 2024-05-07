@@ -1,0 +1,242 @@
+.progress-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 940px;
+
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: #FFFFFF;
+
+}
+
+/* TEXT BLOCK */
+.progress-bar__text-block {
+ width: 50%;
+}
+
+.progress-bar .hero__title {
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    fill: var(--orange-color);
+}
+
+.progress-bar .hero__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sun_orange.svg);
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.progress-bar__title {
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 130%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.progress-bar__post-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 44px;
+    width: 410px;
+}
+
+/* LIST */
+.progress-bar__li {
+    margin-bottom: 10px;
+}
+
+.progress-bar__li p{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    color: var(--text-color-dark);
+    margin-bottom: 10px;
+}
+
+.diagram-1, .diagram-2, .diagram-3 {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transition: all 1.3s ease;
+}
+
+.diagram-left {
+    width: 35%;
+    background-color: var(--orange-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.diagram-left span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--text-color-white);
+
+}
+
+.diagram-right {
+    width: 75%;
+    background-color: #F5F6F7;
+}
+
+.diagram-2 .diagram-left {
+    width: 55%;
+}
+
+.diagram-2 .diagram-right {
+    width: 45%;
+}
+
+.diagram-3 .diagram-left {
+    width: 75%;
+}
+
+.diagram-3 .diagram-right {
+    width: 25%;
+}
+
+
+/* IMAGE BLOCK */
+
+
+
+.progress-bar__image {
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 74px;
+    padding-top: 64px;
+    width: 525px;
+    height: 720px;
+    background-color: #2F4252;
+    border-radius: 20px;
+    color: white;
+
+    background-image: url(../images/client.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.progress-bar__image p {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 130%;
+    margin-bottom: 8px;
+    pointer-events: none;
+    
+}
+
+.progress-bar__image h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    font-family: 'DMSans', Arial, sans-serif;
+    pointer-events: none;
+} 
+
+
+/* Показати меню, коли вікно браузера менше 720px */
+@media (max-width: 1280px) {
+    .progress-bar__image {
+        padding-left: 24px;
+        padding-top: 64px;
+        width: 425px;
+        height: 620px;
+    }
+
+    .progress-bar__title {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 130%; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .progress-bar__post-title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        margin-bottom: 44px;
+        width: 410px;
+    }
+
+    .progress-bar__li p{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        color: var(--text-color-dark);
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .progress-bar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1400px;
+    
+    }
+
+    .progress-bar__text-block {
+        width: 80%;
+       }
+
+    .progress-bar .hero__title {
+        font-weight: 500;
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width: 580px) {
+    .progress-bar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1400px;
+
+        
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-top: 60px;
+            padding-bottom: 60px;
+    
+    }
+
+    .progress-bar__text-block {
+        width: 100%;
+       }
+}
+
+
+
+
+
