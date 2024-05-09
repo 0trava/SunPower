@@ -29,6 +29,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     fill: var(--orange-color);
+    pointer-events: none;
 }
 
 .about-us .hero__title::before {
@@ -66,6 +67,7 @@
 
 .about-us__text .progress-bar__post-title {
     width: 100%;
+    pointer-events: none;
 }
 
 .about-us .progress-bar__post-title {

@@ -1,0 +1,83 @@
+.our-services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: #313233;
+}
+
+
+
+/* ICON */
+
+.our-services .hero__title {
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    fill: var(--orange-color);
+}
+
+.our-services .hero__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sun_orange.svg);
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+/* TEXT */
+
+.our-services__title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--text-color-white);
+
+}
+
+.our-services__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center; 
+} 
+
+/* list */
+
+.our-services__list {
+    width: 360px;
+    height: 376px;
+    border-radius: 12px;
+    fill: var(--images-gray);
+}
+
+.our-services__list h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    color: var(--text-color-white);
+}
+
+.our-services__list p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--background-gray);
+}
