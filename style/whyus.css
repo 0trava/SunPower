@@ -13,8 +13,39 @@
     background-color: #F5F6F7;
 }
 
-.why-us iframe {
-    pointer-events: none;
+
+
+/* ICON */
+
+.why-us .hero__title {
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    fill: var(--orange-color);
+}
+
+.why-us .hero__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sun_orange.svg);
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.why-us__title_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 
@@ -22,25 +53,112 @@
 
 .why-us__list {
     display: flex;
+    justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
 
-.why-us__list li {
-    width: 320px;
+.why-us__list div {
+    display: flex;
+    justify-content: center;
 
+}
+
+.why-us__list li {
+    width: 320px;   
+
+}
+
+.why-us__list img {
+    width: 70px;
+    height: 70px;
 }
 
 .why-us__list li h4 {
     font-weight: 700;
     font-size: 25px;
     line-height: 130%;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    height: 65px;
 }
 
 .why-us__list li p {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    text-align:justify;
+
+}
+
+/* VIDEO */
+
+.why-us__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: -240px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 20px;
+    width: 1140px;
+    height: 520px;
+    overflow: hidden;
+
+}
+
+/* .why-us iframe {
+    pointer-events: none;
+} */
+
+@media (max-width: 1630px) {
+    .why-us__list li {
+        width: 40%;
+    }
+
+    .why-us__video {
+        width: 70%;
+        height: 35vw;
+        bottom: -20vw;
+
+    
+    }
+
+    .why-us {
+        padding-bottom: 20vw;
+
+    }
+
+}
+
+
+@media (max-width: 620px) {
+    .why-us__list li {
+        width: 90%;
+    }
+
+    .why-us__video {
+        bottom: -100px;
+
+    
+    }
+
+    .why-us {
+        padding-bottom: 180px;
+
+    }
+
+    .why-us__list li h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        height: auto;
+    }
 }
 
 
