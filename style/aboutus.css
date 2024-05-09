@@ -53,7 +53,7 @@
 
 .about-us__image {
     border-radius: 20px;
-    width: 484px;
+    width: 80%;
     height: 364px;
     background-color: #2F4252;
 }
@@ -139,6 +139,10 @@
         margin-bottom: 16px;
         height: auto;
     }
+
+    .about-us__images div:last-child {
+        display: none;
+    }
     
 }
 
@@ -156,8 +160,13 @@
 
     }
 
+    .about-us__images {
+        flex-direction: row;
+        width: 100%;
+    }
+
     .about-us__text {
         padding-top: 50px;
-        width: 80%;
+        width: 100%;
     }
 }
