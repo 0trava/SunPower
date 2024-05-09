@@ -208,7 +208,7 @@
         width: 80%;
        }
 
-    .progress-bar .hero__title {
+    .progress-bar .hero__title, .why-us .hero__title{
         font-weight: 500;
         font-size: 12px;
 

@@ -1,0 +1,163 @@
+.about-us {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    width: 100vw;
+    /* gap: 96px; */
+    /* height: 940px; */
+
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 110px;
+    padding-top: 395px;
+    padding-bottom: 110px;
+    background-color: #ffff;
+}
+
+
+
+/* ICON */
+
+.about-us__text .hero__title {
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    fill: var(--orange-color);
+}
+
+.about-us .hero__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sun_orange.svg);
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+/* Images */
+.about-us__images {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 50%;
+}
+
+.about-us__image {
+    border-radius: 20px;
+    width: 484px;
+    height: 364px;
+    background-color: #2F4252;
+}
+
+/* TEXT */
+
+.about-us__text {
+    width: 50%;
+}
+
+.about-us__text .progress-bar__post-title {
+    width: 100%;
+}
+
+.about-us .progress-bar__post-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.about-us__text ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    margin-top: 16px;
+}
+
+
+.about-us__text li {
+    border: 1px solid var(--grey-4);
+    border-radius: 8px;
+    padding: 21px 24px;
+    width: 100%;
+    background-color: var(--background-gray);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    transition: all 1.3s ease;
+}
+
+.about-us__text li:hover, .about-us__text li:focus {
+    background-color: var(--orange-color);
+    color: #ffff;
+}
+
+.about-us__text li:first-child {
+
+
+}
+
+
+@media (max-width: 1630px) {
+
+    .about-us {
+        padding-top: 30vw;
+    }
+
+    .about-us h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+
+
+    .about-us {
+        padding-top: 80px;
+        flex-direction: column;
+
+    }
+
+    .about-us h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 1020px) {
+
+    .about-us .hero__title{
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .about-us__text {
+        padding-top: 50px;
+        width: 80%;
+    }
+}

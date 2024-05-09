@@ -107,6 +107,7 @@
     width: 1140px;
     height: 520px;
     overflow: hidden;
+    z-index: 3;
 
 }
 
@@ -123,12 +124,21 @@
         width: 70%;
         height: 35vw;
         bottom: -20vw;
+        pointer-events: none;
 
     
     }
 
     .why-us {
         padding-bottom: 20vw;
+
+    }
+
+    .why-us__list li h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+
 
     }
 
@@ -141,13 +151,13 @@
     }
 
     .why-us__video {
-        bottom: -100px;
+        display: none;
 
     
     }
 
     .why-us {
-        padding-bottom: 180px;
+        padding-bottom: 80px;
 
     }
 
@@ -158,6 +168,23 @@
         margin-top: 20px;
         margin-bottom: 16px;
         height: auto;
+    }
+
+    .why-us__title_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    
+}
+
+@media (max-width: 1020px) {
+
+    .why-us .hero__title{
+        font-weight: 500;
+        font-size: 12px;
     }
 }
 
