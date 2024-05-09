@@ -16,3 +16,31 @@
 .why-us iframe {
     pointer-events: none;
 }
+
+
+/* LIST Style */
+
+.why-us__list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.why-us__list li {
+    width: 320px;
+
+}
+
+.why-us__list li h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+}
+
+.why-us__list li p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+
