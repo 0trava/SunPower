@@ -61,11 +61,11 @@
 
 /* list */
 
-.our-services__list {
+.our-services__list div {
     width: 360px;
     height: 376px;
     border-radius: 12px;
-    fill: var(--images-gray);
+    background-color: var(--images-gray);
 }
 
 .our-services__list h4 {

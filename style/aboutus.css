@@ -56,7 +56,7 @@
     border-radius: 20px;
     width: 80%;
     height: 364px;
-    background-color: #2F4252;
+    background-color: var(--background-durk);
 }
 
 /* TEXT */
