@@ -57,7 +57,19 @@
     width: 80%;
     height: 364px;
     background-color: var(--background-durk);
+    background-image: url(../images/one.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
+
+.image2 {
+    background-image: url(../images/two.webp);
+}
+
+
+
 
 /* TEXT */
 
@@ -121,6 +133,8 @@
         line-height: 120%;
     }
 
+
+
 }
 
 
@@ -163,8 +177,17 @@
     }
 
     .about-us__images {
-        flex-direction: row;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us__image {
+        flex-direction: row;
+        width: 80vw;
+
+        
     }
 
     .about-us__text {

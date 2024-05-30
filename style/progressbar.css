@@ -55,20 +55,39 @@
     font-size: 18px;
     line-height: 140%;
     margin-bottom: 44px;
-    width: 410px;
+    width: 80%;
 }
 
 /* LIST */
 .progress-bar__li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .progress-bar__li p{
-    font-weight: 700;
+    /* font-weight: 700;
     font-size: 25px;
-    line-height: 130%;
+    line-height: 130%; */
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.4;
     color: var(--text-color-dark);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0))
+}
+
+.progress-bar__li p > span{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 130%;
+    color: var(--orange-color);
+    /* margin-bottom: 10px; */
+    margin-right: 40px;
 }
 
 .diagram-1, .diagram-2, .diagram-3 {
@@ -181,8 +200,8 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 140%;
-        margin-bottom: 44px;
-        width: 410px;
+        margin-bottom: 10px;
+        width: 100%;
     }
 
     .progress-bar__li p{
@@ -191,6 +210,7 @@
         line-height: 130%;
         color: var(--text-color-dark);
         margin-bottom: 10px;
+        
     }
 }
 

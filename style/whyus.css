@@ -65,13 +65,25 @@
 }
 
 .why-us__list li {
-    width: 320px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    padding: 10px;
+    border-radius: 20px;  
+    /* transition: all 2.3s ease;  */
 
 }
 
+.why-us__list li:hover, .why-us__list li:focus {
+    
+}
+
+
 .why-us__list img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
 
 .why-us__list li h4 {
