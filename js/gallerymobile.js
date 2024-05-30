@@ -1,13 +1,17 @@
-document.querySelector('.prev').addEventListener('click', function() {
-    document.querySelector('.gallery').scrollBy({
-        left: -200,
-        behavior: 'smooth'
-    });
-});
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
 
-document.querySelector('.next').addEventListener('click', function() {
-    document.querySelector('.gallery').scrollBy({
-        left: 200,
-        behavior: 'smooth'
-    });
-});
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+// Start the slideshow
+showSlides();
+
+document.cookie = "name=value; SameSite=None; Secure";

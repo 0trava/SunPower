@@ -129,8 +129,10 @@
     
 }
 
-.gallery-container {
+.slideshow-container {
     display: none;
+    width: 80vw;
+    height: 60vh;
 }
 
 
@@ -158,6 +160,8 @@
     
 }
 
+
+
 @media (max-width: 680px) { 
     .list1 img {
          display: none;
@@ -167,7 +171,7 @@
         display: none;
     }
 
-    .gallery-container {
+    .slideshow-container {
         display: flex;
     }  
     
@@ -176,4 +180,29 @@
 
 /* mobile gallery */
 
+.slideshow-container {
+    position: relative;
+    width: 80vw;
+    height: 374px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
 
+.slide {
+    display: none;
+    width: 100%;
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+}
+
+.slideshow-container img:hover, .slideshow-container img:focus{
+    filter: none;
+    
+}
+
+/* Optional: Add CSS styles for transition effect */
+.slide {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
