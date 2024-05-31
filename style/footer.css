@@ -35,6 +35,7 @@
     width: 20vw;
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
     /* gap: 24px; */
 }
 
@@ -61,7 +62,7 @@
     gap: 12px
 }
 
-.footer__block3 p {
+.footer__block3 p, .footer__block4 p {
     color: #d4d4d4;
     list-style: none;
     font-weight: 400;
@@ -99,30 +100,54 @@
 
 
 /* Subscribe */
-
 .input-container {
-    position: relative;
     display: flex;
-    height: 2.8rem;
-    width: 100%;
-    min-width: 200px;
-    max-width: 250px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+
+.input {
+    max-width: 80%;
+    padding: 15px;
+    font-size: 17px;
+    color: black;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+    border: 2px solid #fff;
+    margin-right: -4px;
   }
+
+  .input:focus-visible {
+    outline: none; /* Убирает стандартную обводку браузера */
+    border: none; /* Убирает границу при фокусе */
+}
   
-  .input-container input {
+  .button {
+    border: none;
+    background-color: var(--orange-color);
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 17px;
+    font-size: 17px;
+    color: black;
+    fill: black;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    cursor: pointer;
     height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid  rgb(176 190 197);
-    background-color: transparent;
-    padding: 0.625rem 70px 0.625rem 0.75rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 400;
-    color: rgb(69 90 100);
-    outline: none;
-    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--cubic);
+    width: 20%;
   }
+
+  .button:hover, .button:focus {
+    background-color: #FF4500; /* Змінити на колір для hover */
+    box-shadow: 2px solid #FF4500;
+}
+
+
+.footer__line {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 24px;
+    margin-top: 48px;
+    background-color: #d4d4d4;
+}
