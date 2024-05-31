@@ -254,6 +254,17 @@
     .progress-bar__text-block {
         width: 100%;
        }
+
+       .progress-bar__image {
+        padding-left: 0px;
+        padding-top: 64px;
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .progress-bar .hero__title {
+        width: 90vw;
+    }
 }
 
 

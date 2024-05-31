@@ -176,6 +176,17 @@
     .slideshow-container {
         display: flex;
     }  
+
+    .portfolio__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 130%;
+        text-align: center;
+        color: var(--text-color-white);
+        margin-bottom: 60px;
+    
+    }
+    
     
 }
 
@@ -204,7 +215,7 @@
 
 .slideshow-container img:hover, .slideshow-container img:focus{
     filter: none;
-    transform: scale(5.05);
+    transform: scale(1.05);
     
 }
 
