@@ -2,6 +2,10 @@
 .footer {
     background-color: var(--background-durk);
     color: #fff;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    padding-left: 7vw;
+    padding-right: 7vw;
 
 
     margin-top: 200px;
@@ -9,6 +13,51 @@
 
 .footer__top {
     display: flex;
+    gap: 40px;
+}
+
+.footer__block1 a {
+    color: #EC3F10;
+}
+
+
+
+.footer__block1 h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #d4d4d4;
+    margin-top: 24px; 
+    width: 20vw;
+}
+
+.footer__block2, .footer__block3, .footer__block4 {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__block2 h3, .footer__block3 h3, .footer__block4 h3  {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    color: #fff;
+}
+
+.footer__block2-list a {
+    color: #d4d4d4;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+}
+
+.footer__block2-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
 }
 
 
