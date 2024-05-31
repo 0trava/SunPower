@@ -77,7 +77,7 @@
     border-radius: 16px;
     cursor: pointer;
     filter: grayscale(80%);
-    transition: filter 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     position: relative;
 }
@@ -107,6 +107,7 @@
 
 .list1 img:hover, .list1 img:focus{
     filter: none;
+    transform: scale(1.05);
 }
 
 .list2 {
@@ -121,11 +122,12 @@
     border-radius: 16px;
     cursor: pointer;
     filter: grayscale(80%);
-    transition: filter 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .list2 img:hover, .list2 img:focus{
     filter: none;
+    transform: scale(1.05);
     
 }
 
@@ -196,8 +198,13 @@
     transition: filter 0.3s ease;
 }
 
+.slideshow-container img {
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .slideshow-container img:hover, .slideshow-container img:focus{
     filter: none;
+    transform: scale(5.05);
     
 }
 
@@ -206,3 +213,7 @@
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
 }
+
+
+/* CARD */
+

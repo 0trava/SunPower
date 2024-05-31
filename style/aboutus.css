@@ -61,6 +61,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    pointer-events: none;
 
 }
 
@@ -107,7 +108,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    transition: all 1.3s ease;
+    transition: var(--cubic);
+    cursor: pointer;
 }
 
 .about-us__text li:hover, .about-us__text li:focus {
