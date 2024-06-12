@@ -18,13 +18,16 @@
         position: absolute;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 60px;
+        padding-right: 8vw;
+        padding-left: 8vw;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         border-radius: 10px;
-        width: 60vw;
-        height: 60vh;
+        width: 50vw;
+        height: auto;
         position: relative;
         align-items: center;
         overflow-y: auto; /* Додавання скролера */
@@ -54,10 +57,76 @@
         margin: 20px 0 25px 0;
     }
 
-    .form__call-time {
+    .form__call-time__text {
         color: var(--orange-color) !important;
         font-size: 18px;
         background: 0 0;
         text-align: center;
         margin-bottom: 5px;
     }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 400px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #4158D0;
+        background-image: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0));
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        margin-bottom: 20px;
+      }
+      
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: black;
+        /* background-image: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0)); */
+        cursor: pointer;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #0093E9;
+        /* background-image: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0)); */
+        cursor: pointer;
+      }
+
+      .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+      .input-style {
+        background-color: #ededed;
+        border: 1px solid #cdcdcd;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        width: 400px;
+        height: 34px;
+        padding: 0 13px;
+        margin-bottom: 17px;
+        color: #797979;
+        font-weight: 300;
+      }
+      
+      .input-style:focus {
+        border-color: var(--orange-color);
+        background-color: white;
+        box-shadow: 0 0 0 0.2rem var(--orange-color);
+      }
+
+      .textarea {
+        height: auto;
+      }
+ 

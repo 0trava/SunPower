@@ -314,22 +314,14 @@
         <span class="close-btn" onclick="closeForm()">✖</span>
         <h2 class="form__title">Замовити дзвінок</h2>
         <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
-        <form>
-            <label for="name">Ім'я:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="phone">Телефон:</label><br>
-            <input type="text" id="phone" name="phone"><br>
-            <label for="call-time" class="form__call-time">Бажаний час для дзвінка:</label><br>
-            <select id="call-time" name="call-time">
-                <!-- Вибір часу від 10 до 18 годин -->
-                <option value="10">10:00 - 12:00</option>
-                <option value="12">12:00 - 14:00</option>
-                <option value="14">14:00 - 16:00</option>
-                <option value="16">16:00 - 18:00</option>
-            </select><br>
-            <label for="description">Короткий опис об'єкту:</label><br>
-            <textarea id="description" name="description" rows="4"></textarea><br><br>
-            <input type="submit" value="Відправити">
+        <form class="form" id="contact-form" action="send_email.php" method="post">
+            <label for="call-time" class="form__call-time">Вкажіть, будь ласка, бажаний час для дзвінка.</label><br>
+            <p class="form__call-time__text" id="selected-time">з 9:00 до 18:00</p>
+            <input id="myRange" class="slider" value="0" max="100" min="0" type="range">
+            <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
+            <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
+            <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
+            <input class="hero__btn" type="submit" value="Відправити">
         </form>
     </div>
 </div>
@@ -340,7 +332,7 @@
     <script src="./js/gallerymobile.js" defer></script>
 
 
-
+<!-- КОД для модального вікна -->
     <script>
         // Функція для відкриття форми
         function openForm() {
@@ -351,6 +343,60 @@
         function closeForm() {
             document.getElementById("overlay").style.display = "none";
         }
+    </script>
+
+
+<!-- КОД для модального вікна скролл -->
+    <script>
+        // Отримання елементів
+        var rangeInput = document.getElementById('myRange');
+        var selectedTime = document.getElementById('selected-time');
+
+        // Обробка подій для ползунка
+        rangeInput.addEventListener('input', function() {
+            var value = this.value;
+            // Перетворення значення на години
+            var hour = Math.floor((value / 100) * 9) + 9;
+            var nextHour = 18;
+
+            // Формування тексту відображення вибраного часу
+            var timeText = 'з ' + hour + ':00 до ' + nextHour + ':00';
+            // Відображення вибраного часу у <p> елементі
+            selectedTime.textContent = timeText;
+        });
+    </script>
+
+
+
+
+<script>
+    // Функція для закриття форми
+    function closeForm() {
+        document.getElementById("overlay").style.display = "none";
+    }
+    
+    // Обробник події для відправки форми
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Зупиняємо стандартну подію відправки форми
+    
+        // Отримуємо дані з форми
+        var formData = new FormData(this);
+    
+        // Відправляємо дані форми на сервер за допомогою AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "send_email.php", true);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                // Відображаємо повідомлення про успішну відправку форми користувачеві
+                alert("Дякую, Ваша заявка прийнята і буде опрацьована у найближчий час");
+                closeForm(); // Закриваємо форму після відправки
+            } else {
+                // Відображаємо повідомлення про помилку відправки форми
+                alert("Сталася помилка під час відправки форми. Будь ласка, спробуйте знову пізніше.");
+            }
+        };
+        xhr.send(formData);
+    });
     </script>
 </body>
 
