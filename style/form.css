@@ -33,6 +33,35 @@
         overflow-y: auto; /* Додавання скролера */
     }
 
+    @media (max-width: 840px) {
+
+      .form-container {
+        width: 90vw;
+        height: auto;
+
+    }
+  
+  }
+
+  @media (max-width: 500px) {
+
+    .form {
+      width: 60vw;
+      height: auto;
+
+  }
+
+  .input-style {
+    width: 60vw !important;
+  }
+
+  .slider {
+    width: 60vw !important;
+
+  }
+
+}
+
     .form-container .close-btn {
         position: absolute;
         top: 10px;
@@ -130,4 +159,7 @@
       .textarea {
         height: auto;
       }
+
+
+
  
