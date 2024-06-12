@@ -1,0 +1,93 @@
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    /* gap: 96px; */
+    /* height: 940px; */
+
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 110px;
+    padding-top: 40px;
+    padding-bottom: 110px;
+    background-color: #ffff;
+    margin-top: 110px;
+    z-index: 5;
+}
+
+.about__text .hero__title {
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    fill: var(--orange-color);
+    pointer-events: none;
+}
+
+.about__text .hero__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sun_orange.svg);
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.about__hero {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url(../images/hero.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about__title {
+    font: 400 38px / 1.15 "Bebas Neue Cyrillic", sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Client */
+
+.client {
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: url(../images/hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    transition: transform 0.5s ease-in-out;
+}
+
+.scroll-down .background {
+    transform: translateY(-10%);
+}
