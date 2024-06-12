@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/portfolio.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/form.css">
+    <link rel="stylesheet" href="./style/burger-menu.css">
 </head>
 
 <body>
@@ -41,17 +42,8 @@
                     </ul>
                 </nav>
 
-                <nav class="header-nav-burger">
-
-                    <!-- <nav>    
-                        <ul class="menu">
-                            <li><a class="hover-link" href="#home">Home</a></li>
-                            <li><a class="hover-link"  href="#about-us">About Us</a></li>
-                            <li><a class="hover-link"  href="#our-services">Services</a></li>
-                            <li><a class="hover-link"  href="#contact-us">Contact Us</a></li>
-                        </ul> 
-                    </nav> -->
-                </nav>
+                <a class="header-nav-burger" onclick="openModal()">
+                </a>
 
                 <button class="cta" onclick="openForm()"><span> Залишити заявку</span>
                     <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -62,6 +54,35 @@
             </div>
 
 
+        </div>
+
+
+        <!-- Burger menu -->
+        <!-- Modal Window -->
+        <div id="fullScreenModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">✖</span>
+                <div class="modal-header">
+                    <img src="./images/Logo PromSys.png" alt="Logo PromSys" class="modal-logo">
+                    <div>
+                        <a href="#home">PromSys</a>
+                        <p>Solar & Renewable Energy</p>
+                    </div>
+                </div>
+                <nav class="modal-nav">
+                    <ul class="modal-menu">
+                        <li><a href="#home">Головна</a></li>
+                        <li><a href="#about-us">Про нас</a></li>
+                        <li><a href="#why-us">Сервіс</a></li>
+                        <li><a href="#contact-us">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="modal-footer">
+                    <p>Телефон: +38 (012) 345-67-89</p>
+                    <p>Email: info@ledps.com.ua</p>
+                    <p>Адреса: вулиця Промислова, 123, м. Київ, Україна</p>
+                </div>
+            </div>
         </div>
 
     </header>
@@ -345,6 +366,23 @@
         }
     </script>
 
+<!-- Скрипт для бургер-меню -->
+    <script>
+        function openModal() {
+            document.getElementById('fullScreenModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('fullScreenModal').style.display = 'none';
+        }
+
+        // Додаємо обробник подій до всіх посилань в модальному меню
+        document.querySelectorAll('.modal-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                closeModal();
+            });
+        });
+    </script>
 
 <!-- КОД для модального вікна скролл -->
     <script>

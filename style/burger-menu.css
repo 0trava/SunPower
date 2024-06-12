@@ -1,0 +1,91 @@
+/* Модальне вікно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.modal-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    
+}
+
+.modal-logo {
+    width: 100px;
+}
+
+.modal-header a {
+    color: var(--text-color-white);
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'DMSans';
+    transition: all 1.3s ease;
+}
+
+.modal-header a:hover {
+    scale: 1.01;
+   
+   }
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-nav {
+    margin: auto;
+}
+
+.modal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-menu li {
+    margin: 15px 0;
+}
+
+.modal-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 1.3s ease;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.modal-menu a:hover, .modal-menu a:focus {
+    color: var(--orange-color);
+}
