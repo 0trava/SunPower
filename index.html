@@ -36,7 +36,7 @@
                     <ul class="menu">
                         <li><a class="hover-link" href="#home">Головна</a></li>
                         <li><a class="hover-link" href="#about-us">Про нас</a></li>
-                        <li><a class="hover-link" href="#our-services">Сервіс</a></li>
+                        <li><a class="hover-link" href="#why-us">Сервіс</a></li>
                         <li><a class="hover-link" href="#contact-us">Контакти</a></li>
                     </ul>
                 </nav>
@@ -255,7 +255,7 @@
     </section>
 
     <!-- FOOTER ------------------------------------------------------>
-    <footer class="footer">
+    <footer class="footer" id="contact-us">
         <div class="footer__top">
             <div class="footer__top_block">
             <div class="footer__block1">
@@ -314,10 +314,10 @@
         <span class="close-btn" onclick="closeForm()">✖</span>
         <h2 class="form__title">Замовити дзвінок</h2>
         <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
-        <form class="form" id="contact-form" action="send_email.php" method="post">
+        <form class="form" method="POST" action="send_email.php">
             <label for="call-time" class="form__call-time">Вкажіть, будь ласка, бажаний час для дзвінка.</label><br>
             <p class="form__call-time__text" id="selected-time">з 9:00 до 18:00</p>
-            <input id="myRange" class="slider" value="0" max="100" min="0" type="range">
+            <input id="myRange" class="slider" value="0" max="100" min="0" type="range" id="range" name="range">
             <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
             <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
             <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
