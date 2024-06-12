@@ -302,6 +302,20 @@ body {
     .header-logo a {
         display: none;
     }
+    
+    .header-logo p {
+      display: none;
+    }
+
+    .cta span {
+      font-size: 1rem;
+    }
+
+    .cta {
+      padding-right: 0;
+    }
+
+    
 }
 
 
