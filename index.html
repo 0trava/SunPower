@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/aboutus.css">
     <link rel="stylesheet" href="./style/portfolio.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/form.css">
 </head>
 
 <body>
@@ -52,7 +53,7 @@
                     </nav> -->
                 </nav>
 
-                <button class="cta"><span> Залишити заявку</span>
+                <button class="cta" onclick="openForm()"><span> Залишити заявку</span>
                     <svg width="15px" height="10px" viewBox="0 0 13 10">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
@@ -306,9 +307,51 @@
     </footer>
 
 
+    <!-- Вспливаюча форма -->
+<!-- Вспливаюча форма -->
+<div class="overlay" id="overlay">
+    <div class="form-container">
+        <span class="close-btn" onclick="closeForm()">✖</span>
+        <h2 class="form__title">Замовити дзвінок</h2>
+        <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
+        <form>
+            <label for="name">Ім'я:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="phone">Телефон:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="call-time" class="form__call-time">Бажаний час для дзвінка:</label><br>
+            <select id="call-time" name="call-time">
+                <!-- Вибір часу від 10 до 18 годин -->
+                <option value="10">10:00 - 12:00</option>
+                <option value="12">12:00 - 14:00</option>
+                <option value="14">14:00 - 16:00</option>
+                <option value="16">16:00 - 18:00</option>
+            </select><br>
+            <label for="description">Короткий опис об'єкту:</label><br>
+            <textarea id="description" name="description" rows="4"></textarea><br><br>
+            <input type="submit" value="Відправити">
+        </form>
+    </div>
+</div>
+
+
 
     <!-- Підключення JavaScript файлів або скриптів -->
     <script src="./js/gallerymobile.js" defer></script>
+
+
+
+    <script>
+        // Функція для відкриття форми
+        function openForm() {
+            document.getElementById("overlay").style.display = "block";
+        }
+    
+        // Функція для закриття форми
+        function closeForm() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
