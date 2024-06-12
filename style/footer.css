@@ -1,21 +1,26 @@
 
 .footer {
     background-color: var(--background-durk);
+    background-color: #313233;
     color: #fff;
     padding-top: 110px;
     padding-bottom: 40px;
     padding-left: 7vw;
     padding-right: 7vw;
+    z-index: 50;
 
 }
 
 .footer__top {
     display: flex;
     gap: 40px;
+    z-index: 50;
+    background-color: var(--background-durk);
 }
 
 .footer__block1 a {
     color: #EC3F10;
+    z-index: 50;
 }
 
 
@@ -27,6 +32,7 @@
     color: #d4d4d4;
     margin-top: 24px; 
     width: 20vw;
+    z-index: 50;
 }
 
 .footer__block2, .footer__block3, .footer__block4 {
@@ -34,6 +40,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    z-index: 50;
     /* gap: 24px; */
 }
 
@@ -43,6 +50,7 @@
     line-height: 130%;
     color: #fff;
     margin-bottom: 24px;
+    z-index: 50;
 }
 
 .footer__block2-list a {
@@ -51,13 +59,15 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    z-index: 50;
 
 }
 
 .footer__block2-list {
     display: flex;
     flex-direction: column;
-    gap: 12px
+    gap: 12px;
+    z-index: 50;
 }
 
 .footer__block3 p, .footer__block4 p {
@@ -67,12 +77,14 @@
     font-size: 16px;
     line-height: 140%; 
     margin-bottom: 12px;
+    z-index: 50;
 }
 
 .footer__block3 a {
     list-style: none;
     color: var(--orange-color);
     transition: var(--cubic);
+    z-index: 50;
 
 
 }
@@ -85,6 +97,7 @@
 .footer__top_block {
     display: flex;
     justify-content: space-between;
+    z-index: 50;
 }
 
 

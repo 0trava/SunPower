@@ -17,11 +17,11 @@ showSlides();
 document.cookie = "name=value; SameSite=None; Secure";
 
 
-function toggleBurgerMenu() {
-    var burgerMenu = document.getElementById('burgerMenu');
-    if (burgerMenu.style.display === 'block') {
-        burgerMenu.style.display = 'none';
+window.addEventListener('scroll', function() {
+    const circle = document.querySelector('.gradient-circle');
+    if (window.scrollY > 50) {
+        circle.classList.add('scrolled');
     } else {
-        burgerMenu.style.display = 'block';
+        circle.classList.remove('scrolled');
     }
-}
+});
