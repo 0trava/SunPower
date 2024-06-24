@@ -341,7 +341,7 @@
         <span class="close-btn" onclick="closeForm()">✖</span>
         <h2 class="form__title">Замовити дзвінок</h2>
         <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
-        <form class="form" method="POST" action="send_email.php">
+        <form class="form" method="POST" action="http://localhost:3000/send-email">
             <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
             <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
             <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
@@ -354,6 +354,7 @@
 
     <!-- Підключення JavaScript файлів або скриптів -->
     <script src="./js/gallerymobile.js" defer></script>
+    <script src="./sendEmail.js" defer></script>
 
 <!-- КОД для модального вікна -->
     <script>
@@ -386,15 +387,6 @@
         });
     </script>
 
-
-<script>
-    // Функція для закриття форми
-    function closeForm() {
-        document.getElementById("overlay").style.display = "none";
-    }
-    
-    // Обробник події для відправки форми
-    </script>
 </body>
 
 </html>
