@@ -1,8 +1,19 @@
+@font-face {
+    font-family: ExampleFont;
+    src: url(/path/to/fonts/examplefont.woff) format('woff'),
+         url(/path/to/fonts/examplefont.eot) format('eot');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+
+
 .about {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
     /* gap: 96px; */
     /* height: 940px; */
@@ -52,10 +63,37 @@
     background-position: center;
 }
 
+
+/* TEXT BLOCK*/
+
+.about__text-block {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .about__title {
-    font: 400 38px / 1.15 "Bebas Neue Cyrillic", sans-serif;
-    text-transform: uppercase;
-    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    height: 65px;
+}
+
+.about__p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align:justify;
+
+}
+
+.page__about .why-us {
+    padding-bottom: 200px;
 }
 
 

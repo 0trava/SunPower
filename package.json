@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  },
+  "name": "sunpower",
+  "description": "SunPower is a dynamic web development project created for PromSys. It features a captivating landing page with smooth animations, enhanced visuals, and a seamless user experience. The HTML and CSS are optimized for responsiveness across devices, ensuring a consistent presentation. With advanced features like parallax effects on images, SunPower sets a new standard for engaging web design.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
