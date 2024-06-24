@@ -7,7 +7,7 @@ let transporter = nodemailer.createTransport({
     secure: true, // true для порта 465, false для порта 587
     auth: {
         user: '0trava0910@gmail.com',
-        pass: '0Trava09101984'
+        pass: 'enqo roos smmt gxlu'
     }
 });
 
