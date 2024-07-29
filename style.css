@@ -1,4 +1,24 @@
+@import url(./style/#about);
+@import url(./style/burger-menu.css);
+@import url(./style/footer.css);
+@import url(./style/form.css);
+@import url(./style/hero.css);
+@import url(./style/portfolio.css);
+@import url(./style/progressbar.css);
+@import url(./style/whyus.css);
+
+
+
+
+
+
+
 /* Reset CSS */
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
