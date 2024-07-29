@@ -6,6 +6,7 @@
 @import url(./style/portfolio.css);
 @import url(./style/progressbar.css);
 @import url(./style/whyus.css);
+@import url(./style/aboutpage.css);
 
 
 
@@ -14,10 +15,6 @@
 
 
 /* Reset CSS */
-
-
-
-
 
 * {
     margin: 0;
@@ -75,6 +72,7 @@ body {
 }
 
 /* Header styles */
+
 
 .header {
     position: absolute;
