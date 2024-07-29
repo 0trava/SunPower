@@ -6,7 +6,7 @@
 @import url(./style/portfolio.css);
 @import url(./style/progressbar.css);
 @import url(./style/whyus.css);
-@import url(./style/aboutpage.css);
+@import url(./style/aboutus.css);
 
 
 
@@ -210,6 +210,16 @@ body {
     position: relative;
     width: 15px;
     transition-delay: 0.2s;
+  }
+
+  .menu .active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
   }
 
 
