@@ -51,7 +51,8 @@
 
 .portfolio__title {
     font-weight: 400;
-    font-size: 24px;
+    margin-top: 10px;
+    font-size: 3vw;
     line-height: 130%;
     text-align: center;
     color: var(--text-color-white);
@@ -60,10 +61,9 @@
 }
 
 @media (max-width: 620px) {
-    .portfolio__title {
-        font-weight: 400;
-        font-size: 64px;
-        line-height: 130%;
+    .swiper--container {
+        width: 90vw;
+        height: 60vh;
     }
 
 }
