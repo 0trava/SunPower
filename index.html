@@ -15,6 +15,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script>new WOW().init();</script>
     
 
 
@@ -23,7 +26,6 @@
     <script src="./js/libs/swiper/swiper-bundle.min.js" defer></script>
 
     <!-- Підключення JavaScript файлів або скриптів -->
-    <script src="./js/gallerymobile.js" defer></script>
     <script src="./sendEmail.js" defer></script>
     <script src="./js/app.js" defer></script>
 </head>
@@ -44,9 +46,9 @@
             <div class="header-nav">
                 <nav class="header-nav-desktop">
                     <ul class="menu">
-                        <li><a class="hover-link" href="#hero">Головна</a></li>
-                        <li><a class="hover-link" href="#about-us">Про нас</a></li>
+                        <li><a class="hover-link" href="#aboutus">Про нас</a></li>
                         <li><a class="hover-link" href="#why-us">Сервіс</a></li>
+                        <li><a class="hover-link" href="#portfolio">Портфоліо</a></li>
                         <li><a class="hover-link" href="#contact-us">Контакти</a></li>
                     </ul>
                 </nav>
@@ -81,7 +83,7 @@
                 <nav class="modal-nav">
                     <ul class="modal-menu">
                         <li><a  class="hover-link" href="#home">Головна</a></li>
-                        <li><a class="hover-link" href="#about-us">Про нас</a></li>
+                        <li><a class="hover-link" href="#aboutus">Про нас</a></li>
                         <li><a class="hover-link" href="#why-us">Сервіс</a></li>
                         <li><a class="hover-link" href="#contact-us">Контакти</a></li>
                     </ul>
@@ -182,7 +184,7 @@
         </p>
         <div class="why-us__title_block">
             <h2 class="progress-bar__title">Експертний Монтаж Сонячних Панелей</h2>
-            <a class="hero__btn" href="#about-us">Дізнатись більше
+            <a class="hero__btn" href="#aboutus">Дізнатись більше
                 <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow">
                     <path
                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
@@ -324,7 +326,7 @@
                     </div>
 
                     <!-- Вспливаюча форма -->
-                    <div class="animate__animated animate__slideInRight animate__slow contactus-form">
+                    <div class="contactus-form wow bounceInUp ">
                         <div class="form-container">
                             <h2 class="form__title">Замовити дзвінок</h2>
                             <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
