@@ -46,3 +46,14 @@
 
         sections.forEach(section => observer.observe(section));
     });
+
+
+
+    // Swiper
+
+    const swiper = new Swiper('.swiper', {
+        mousewheel: true,
+        speed: 1700,
+        allowTouchMove: true
+   
+     });

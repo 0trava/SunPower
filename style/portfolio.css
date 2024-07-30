@@ -5,12 +5,18 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: 100vh;
 
     padding-left: 7vw;
     padding-right: 7vw;
     padding-top: 110px;
     padding-bottom: 110px;
     background-color: #313233;
+    background-image: url(../images/dot_fon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 
@@ -199,40 +205,38 @@
 }
 
 
-/* mobile gallery */
-
-.slideshow-container {
-    position: relative;
-    width: 80vw;
-    height: 374px;
-    border-radius: 16px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.slide {
-    display: none;
-    width: 100%;
-    filter: grayscale(80%);
-    transition: filter 0.3s ease;
-}
-
-.slideshow-container img {
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.slideshow-container img:hover, .slideshow-container img:focus{
-    filter: none;
-    transform: scale(1.05);
-    
-}
-
-/* Optional: Add CSS styles for transition effect */
-.slide {
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-}
-
 
 /* CARD */
+
+.swiper--container {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 80%;
+    height: 100%;
+
+}
+.swiper--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.swiper--item img {
+   width: 100%;
+   height: 100%;
+}
+
+
+
+
 
