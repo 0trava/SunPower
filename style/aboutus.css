@@ -24,6 +24,22 @@
     background-color: #ffff;
 }
 
+.about-us::before {
+    content: '';
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    left: -7vw;
+    pointer-events: none;
+    z-index: 1;
+
+    background-image: url(../images/fon\ dot\ left.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
 
 
 /* ICON */
@@ -59,6 +75,7 @@
     flex-direction: column;
     gap: 36px;
     width: 50%;
+    z-index: 2;
 }
 
 .about-us__image {
@@ -71,6 +88,7 @@
     background-position: center;
     background-size: cover;
     pointer-events: none;
+    z-index: 2;
 
 }
 
@@ -104,6 +122,7 @@
     flex-direction: column;
     gap: 37px;
     margin-top: 16px;
+    z-index: 2;
 }
 
 
@@ -119,6 +138,7 @@
     line-height: 140%;
     transition: var(--cubic);
     cursor: pointer;
+    z-index: 2;
 }
 
 .about-us__text li:hover, .about-us__text li:focus {

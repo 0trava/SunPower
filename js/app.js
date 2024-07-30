@@ -44,8 +44,14 @@
     // Swiper
 
     const swiper = new Swiper('.swiper', {
-        mousewheel: true,
         speed: 1700,
-        allowTouchMove: true
+        allowTouchMove: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+          }
+        
+
    
      });
