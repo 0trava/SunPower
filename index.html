@@ -23,8 +23,9 @@
     <script src="./js/libs/swiper/swiper-bundle.min.js" defer></script>
 
     <!-- Підключення JavaScript файлів або скриптів -->
-    <script src="./sendEmail.js" defer></script>
+    <!-- <script src="./sendEmail.js" defer></script> -->
     <script src="./js/app.js" defer></script>
+    <script src="./js/server.js" defer></script>
 </head>
 
 <body>
@@ -290,27 +291,21 @@
     <!-- TESTIMONIAL SECTION ----------------------------------------->
     <section class="contactus" id="contact-us">
         <div class="contactus-container">
-                <div class="contuctus-block">
-                    <!-- Вспливаюча форма -->
-                    <div class="wow slideInRight contactus-form" data-wow-duration="2s">
-                        <div class="form-container">
-                            <h2 class="form__title">Замовити дзвінок</h2>
-                            <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
-                            <form class="form" method="POST" action="http://localhost:3000/send-email">
-                                <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
-                                <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
-                                <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
-                                <input class="hero__btn" type="submit" value="Відправити">
-                            </form>
-                        </div>
-                    </div>
+            <div class="contuctus-block">
+                <div class="wow slideInRight contactus-form" data-wow-duration="2s">
+                    <div class="form-container">
+                        <h2 class="form__title">Замовити дзвінок</h2>
+                        <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
+                        <form class="form" method="POST" action="http://localhost:3000/send-email">
+                            <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
+                            <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
+                            <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
+                            <input class="hero__btn" type="submit" value="Відправити">
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-
-        
-
     </section>
 
     <!-- FOOTER ------------------------------------------------------>
