@@ -103,12 +103,14 @@
 }
 
 .hero__pre-title {
-    font-size: 64px;
-    line-height: 130%;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 180%;
     padding-left: 30px;
     display: flex;
     justify-content: center;
     z-index: 50;
+    text-transform: uppercase;
 }
 
 .hero__text {
