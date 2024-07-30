@@ -125,8 +125,8 @@
 
 
         
-        <div class="gradient-circle"></div>
-        <div class="gradient-circle second"></div>
+        <!-- <div class="gradient-circle"></div>
+        <div class="gradient-circle second"></div> -->
 
 
 
@@ -288,12 +288,38 @@
 
 
     <!-- TESTIMONIAL SECTION ----------------------------------------->
-    <section id="testimonial">
+    <section class="contactus" id="contact-us">
+        <div class="contactus-container">
+                <div class="contuctus-block">
+                    <div>
+                        <h2 class="contactus-title">Контакти</h2>
+                        <p></p>
+                    </div>
+
+                    <!-- Вспливаюча форма -->
+                    <div class="contactus-form">
+                        <div class="form-container">
+                            <h2 class="form__title">Замовити дзвінок</h2>
+                            <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
+                            <form class="form" method="POST" action="http://localhost:3000/send-email">
+                                <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
+                                <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
+                                <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
+                                <input class="hero__btn" type="submit" value="Відправити">
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
 
     </section>
 
     <!-- FOOTER ------------------------------------------------------>
-    <footer class="footer" id="contact-us">
+    <footer class="footer" id="footer">
         <div class="footer__top">
             <div class="footer__top_block">
             <div class="footer__block1">
@@ -315,7 +341,7 @@
             </div>
             <div class="footer__block3">
                 <h3>Контактні дані</h3>
-                <p>Адреса: Україна, м. Київ, вул. Кирилівська 40</p>
+                <p>Адреса: м.Київ, вул.Кирилівська 40</p>
                 <p>Тел: <a href="tel:+380442386600">+38 (044) 238 66 00</a></p>
                 <p>E-mail: <a href="mailto:office@ledps.com.ua">office@ledps.com.ua</a></p>
                 <p>Працюємо: пн-пт з 9.00 до 18.00</p>
@@ -343,23 +369,6 @@
 
     
     </footer>
-
-
-    <!-- Вспливаюча форма -->
-<!-- Вспливаюча форма -->
-<div class="overlay" id="overlay">
-    <div class="form-container">
-        <span class="close-btn" onclick="closeForm()">✖</span>
-        <h2 class="form__title">Замовити дзвінок</h2>
-        <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
-        <form class="form" method="POST" action="http://localhost:3000/send-email">
-            <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
-            <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
-            <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
-            <input class="hero__btn" type="submit" value="Відправити">
-        </form>
-    </div>
-</div>
 
 </body>
 
