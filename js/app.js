@@ -1,4 +1,27 @@
 
+    // Модальне вікно
+
+    function openModal() {
+        document.getElementById("fullScreenModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("fullScreenModal").style.display = "none";
+    }
+
+    // Закриття модального вікна при кліку на область поза вмістом
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("fullScreenModal")) {
+            closeModal();
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     // Додаємо обробник подій до всіх посилань в модальному меню
     document.querySelectorAll('.modal-menu a').forEach(function(link) {
         link.addEventListener('click', function() {
