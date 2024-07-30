@@ -66,9 +66,10 @@ body {
 
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000; 
     display: flex;
     width: 100vw;
     height: 110px;
@@ -224,6 +225,10 @@ body {
     border: none;
     background: none;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .cta:before {
@@ -241,6 +246,7 @@ body {
   
   .cta span {
     position: relative;
+
     font-family: 'DMSans', Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
