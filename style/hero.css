@@ -47,9 +47,7 @@
     padding-left: 7vw;
     padding-right: 7vw;
     padding-top: 93px;
-
-    overflow-x: hidden;
-
+    overflow: hidden;
 }
 
 

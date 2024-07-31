@@ -17,6 +17,7 @@
     padding-left: 7vw;
     padding-right: 7vw;
     z-index: 50;
+    overflow: hidden;
 
 }
 
@@ -26,6 +27,7 @@
     z-index: 50;
     background-color: var(--background-durk);
 }
+
 
 .footer__block1 a {
     color: #EC3F10;
@@ -40,7 +42,7 @@
     line-height: 140%;
     color: #d4d4d4;
     margin-top: 24px; 
-    width: 20vw;
+    width: 15vw;
     z-index: 50;
 }
 
@@ -105,8 +107,14 @@
 
 .footer__top_block {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     z-index: 50;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
 }
 
 
