@@ -57,6 +57,7 @@
 
 /* General styles */
 body {
+    position: relative;
     font-family: 'DMSans', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -347,6 +348,12 @@ body {
 
     .cta {
       padding-right: 0;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
     }
 
     

@@ -215,6 +215,10 @@
         
     }
 
+    .why-us::after {
+        right: 0vw;
+    }
+
     
 }
 

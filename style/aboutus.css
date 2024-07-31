@@ -22,6 +22,7 @@
     padding-top: 395px;
     padding-bottom: 110px;
     background-color: #ffff;
+    overflow: hidden;
 }
 
 .about-us::before {
@@ -145,11 +146,6 @@
     color: #ffff;
 }
 
-.about-us__text li:first-child {
-
-
-}
-
 
 @media (max-width: 1630px) {
 
@@ -189,7 +185,8 @@
     .about-us__images div:last-child {
         display: none;
     }
-    
+
+
 }
 
 @media (max-width: 1020px) {
