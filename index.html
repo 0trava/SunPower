@@ -21,7 +21,7 @@
 
     <!-- Підключення JavaScript файлів або скриптів -->
     <script src="./js/app.js" defer></script>
-
+    <script src="./js/form.js" defer></script>
 
 </head>
 
@@ -297,7 +297,7 @@
                     <div class="form-container">
                         <h2 class="form__title">Замовити дзвінок</h2>
                         <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
-                        <form class="form" method="POST" action="http://localhost:3000/send-email">
+                        <form class="form" id="contactForm">
                             <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
                             <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
                             <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
